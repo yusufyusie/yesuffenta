@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => (
+const Navigation = () => (
   <header className="bg-night-500 text-white px-6 py-4">
     <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
       <div className="container">
@@ -22,4 +22,4 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+export default Navigation;
