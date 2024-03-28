@@ -2,17 +2,23 @@ import React from 'react';
 
 const Header = () => (
   <header className="bg-night-500 text-white px-6 py-4">
-    <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-      <div className="font-poppins text-xl mb-4 sm:mb-0">My Portfolio</div>
-      <nav>
-        <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-          <li><a href="/" className="hover:text-primary">Home</a></li>
-          <li><a href="/projects" className="hover:text-primary">Projects</a></li>
-          <li><a href="/about" className="hover:text-primary">About</a></li>
-          <li><a href="/contact" className="hover:text-primary">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div className="container">
+        <a className="navbar-brand" href="#page-top">Portfolio</a>
+        <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i className="fas fa-bars" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Home</a></li>
+            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
+            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 );
 
