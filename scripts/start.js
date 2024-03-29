@@ -6,19 +6,17 @@ const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_module
 concurrently([
     { command: 'node scripts/yp-watch.js', name: 'YP_WATCH', prefixColor: 'bgBlue.bold' },
     { 
-        command: `"${browserSyncPath}" --reload-delay 2000 --reload-debounce 2000 dist -w --no-online`,
+        command: `"${browserSyncPath}" --reload-delay 2000 --reload-debounce 2000 public -w --no-online`,
         name: 'YP_BROWSER_SYNC', 
         prefixColor: 'bgGreen.bold',
     }
 ], {
     prefix: 'name',
     killOthers: ['failure', 'success'],
-}).then(success, failure);
-
-function success() {
-    console.log('Success');    
-}
-
-function failure() {
-    console.log('Failure');
-}
+}, (err, exitCode) => {
+    if (err) {
+        console.error('Failure');
+    } else {
+        console.log('Success');
+    }
+});
