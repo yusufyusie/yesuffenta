@@ -7,7 +7,7 @@ concurrently([
     { command: 'node scripts/yp-watch.js', name: 'YP_WATCH', prefixColor: 'bgBlue.bold' },
     { 
         command: `"${browserSyncPath}" --reload-delay 2000 --reload-debounce 2000 dist -w --no-online`,
-        name: 'SB_BROWSER_SYNC', 
+        name: 'YP_BROWSER_SYNC', 
         prefixColor: 'bgGreen.bold',
     }
 ], {
