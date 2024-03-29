@@ -8,23 +8,23 @@
 // https://caniuse.com/?search=scroll-padding
 
 html {
-    height: 100%;
-    scroll-padding-top: calc(#{$navbar-height} - 1px);
+  height: 100%;
+  scroll-padding-top: calc(#{$navbar-height} - 1px);
 }
 
 // Styling for page sections
 .page-section {
-    padding: 6rem 0;
+  padding: 6rem 0;
 
+  .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+
+  @include media-breakpoint-up(lg) {
     .page-section-heading {
-        font-size: 2.25rem;
-        line-height: 2rem;
+      font-size: 3rem;
+      line-height: 2.5rem;
     }
-
-    @include media-breakpoint-up(lg) {
-        .page-section-heading {
-            font-size: 3rem;
-            line-height: 2.5rem;
-        }
-    }
+  }
 }
