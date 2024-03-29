@@ -1,3 +1,8 @@
+:root {
+  --bs-primary: #1abc9c;
+  --bs-primary-rgb: 26, 188, 156; 
+}
+
 *,
 *::before,
 *::after {
@@ -80,4 +85,9 @@ svg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
