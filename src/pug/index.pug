@@ -6,7 +6,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Yesuf Fenta's portfolio website
+        title Yesuf Fenta's - portfolio
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -24,3 +24,35 @@ html(lang='en')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
+
+body#page-top
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top(role='navigation')
+        .container
+            a.navbar-brand(href='#page-top') Yesuf Fenta
+            button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                | Menu 
+                i.fas.fa-bars
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav.ms-auto
+                    li.nav-item.mx-0.mx-lg-1
+                        a.nav-link.py-3.px-0.px-lg-3.rounded(href='#projects') Projects
+                    li.nav-item.mx-0.mx-lg-1
+                        a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                    li.nav-item.mx-0.mx-lg-1
+                        a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
+        // Hero Section
+header.hero.bg-primary.text-white.text-center
+    .container.d-flex.align-items-center.flex-column
+        // Hero Avatar Image
+        img.hero-avatar.mb-5(src='assets/img/avataaars.svg', alt='Avatar')
+        // Hero Heading
+        h1.hero-heading.text-uppercase.mb-0 Yesuf Fenta
+        // Icon Divider
+        .divider-custom.divider-light
+            .divider-custom-line
+            .divider-custom-icon
+                i.fas.fa-star
+            .divider-custom-line
+        // Hero Subheading
+        p.hero-subheading.font-weight-light.mb-0 Full Stack Developer
