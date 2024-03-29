@@ -2,17 +2,6 @@
   "name": "yesuffenta",
   "version": "7.0.7",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.1",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.12",
-    "bootstrap": "^5.3.3",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.13",
-    "pug": "^3.0.2",
-    "tailwind-scrollbar": "^3.1.0"
-  },
   "scripts": {
     "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
     "build:assets": "node scripts/build-assets.js",
@@ -35,24 +24,49 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.12",
+    "bootstrap": "^5.3.3",
+    "prettier-plugin-tailwindcss": "^0.5.13",
+    "tailwind-scrollbar": "^3.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.3",
     "@babel/eslint-parser": "^7.24.1",
     "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "chokidar": "^3.6.0",
+    "concurrently": "^8.2.2",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.29.1",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
+    "prettier": "^3.2.5",
+    "pug": "^3.0.2",
+    "sass": "^1.72.0",
+    "shelljs": "^0.8.5",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "upath": "^2.0.1"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
-  "keywords": [],
-  "author": "",
+  "description": "A Yesuf portfolio.",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "html",
+    "pug",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "author": "Yesuf Fenta",
   "license": "ISC"
 }
