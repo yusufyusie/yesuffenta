@@ -28,6 +28,22 @@ h1,
   font-size: calc(1.375rem + 1.5vw);
 }
 
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
@@ -55,4 +71,13 @@ h1,
   .masthead .masthead-subheading {
     font-size: 1.5rem;
   }
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
 }
