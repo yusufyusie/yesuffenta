@@ -1,8 +1,11 @@
-// 
-// Hero
-// 
+$custom-color: #602080; 
 
 .hero {
+  &.bg-primary {
+    background-color: $custom-color !important;
+    color: $white;
+  }
+
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 
@@ -18,12 +21,10 @@
   .hero-avatar {
     width: 15rem;
   }
-}
 
-@include media-breakpoint-up(lg) {
-  .hero {
+  @include media-breakpoint-up(lg) {
     padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-bottom: 6rem; 
 
     .hero-heading {
       font-size: 4rem;

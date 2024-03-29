@@ -12069,6 +12069,10 @@ html {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
+.hero.bg-primary {
+  background-color: #602080 !important;
+  color: #fff;
+}
 .hero .hero-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
@@ -12079,7 +12083,6 @@ html {
 .hero .hero-avatar {
   width: 15rem;
 }
-
 @media (min-width: 992px) {
   .hero {
     padding-top: calc(6rem + 104px);
@@ -12093,6 +12096,7 @@ html {
     font-size: 1.5rem;
   }
 }
+
 .projects .projects-item {
   cursor: pointer;
   position: relative;
