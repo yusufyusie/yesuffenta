@@ -59,17 +59,34 @@ section#project.page-section.project {
           font-size: 1.5rem;
 
           h4 {
-            font-size: 1em;
+            font-size: 1.2em;
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin-bottom: 0.5em;
           }
         
-          p {
-            font-size: 0.6em;
-            color: #ddd;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          .skill-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
             margin-bottom: 1em;
+          
+            li {
+              font-size: 0.8em;
+              color: #ddd;
+              background-color: #333;
+              padding: 1px 4px;
+              border-radius: 1px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+              transition: background-color 0.3s ease;
+          
+              &:hover {
+                background-color: #555;
+              }
+            }
           }
       }
   }
