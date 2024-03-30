@@ -1,42 +1,74 @@
-// 
-// projects
-// --------------------------------------------------
+// Project Section
+section#project.page-section.project {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
 
-.project {
-  .project-item {
-      cursor: pointer;
-      position: relative;
-      display: block;
-      max-width: 25rem;
-      border-radius: $border-radius;
-      overflow: hidden;
-      
-      .project-item-caption {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: $transition-base;
-        opacity: 0;
-        background-color: fade-out($primary, .1);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-        &:hover {
-            opacity: 1;
-        }
+.row.justify-content-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-        .project-item-caption-content {
-          font-size: 1.5rem;
-        }
+.col-md-6.col-lg-4 {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.project-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+  &:hover {
+      transform: translateY(-5px);
+  }
+
+  .project-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: $transition-base;
+    opacity: 0;
+    background-color: fade-out($primary, .1);
+
+    &:hover {
+        opacity: 1;
     }
+
+      .project-item-caption-content {
+          font-size: 1.5rem;
+      }
+  }
+
+  img.img-fluid {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+  }
+
+  &:hover img.img-fluid {
+      transform: scale(1.05);
   }
 }
 
-// Styling for the projects modals
-    .project-modal {
-      .btn-close {
-        color: $primary;
-        font-size: 2rem;
-        padding: 1rem;
-    }
+.project-modal {
+  .btn-close {
+    color: $primary;
+    font-size: 2rem;
+    padding: 1rem;
+}
 
     .project-modal-title {
       font-size: 2.25rem;
