@@ -1,7 +1,3 @@
-// 
-// Styles
-// 
-
 // Import custom variables and override default Bootstrap variables
 @import "./variables.scss";
 
@@ -19,5 +15,9 @@
 
 // Sections
 @import "./sections/hero.scss";
-@import "./sections/projects.scss";
+@import "./sections/project.scss";
+@import "./sections/about.scss";
 @import "./sections/footer.scss";
+
+// Modals
+@import "./modals/modals.scss";

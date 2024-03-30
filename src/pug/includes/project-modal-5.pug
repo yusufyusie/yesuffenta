@@ -1,0 +1,39 @@
+// Portfolio Modal 5
+#projectModal5.project-modal.modal.fade(tabindex='-1', aria-labelledby='projectsModal5', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content.bg-dark.text-white
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close', style='background-color: #ff0000; color: #ffffff; border: 2px solid #ffffff;')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.project-modal-title.text-uppercase.mb-0 African Day 2023 Concert
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line.bg-white
+                                .divider-custom-icon
+                                    i.fas.fa-star.text-white
+                                .divider-custom-line.bg-white
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/africadayconcert.png', alt='...')
+                                .col-lg-6
+                                    // Portfolio Modal - Text
+                                    p.mb-4 The capstone project designed by Cindy Shin in Behance that contains details following design guidelines which are provided by Microverse. I have personalized its contents by creating a website for African Day 2023 Concert with a title "African Day 2023 Concert. It is built using HTML, CSS, and JavaScript.
+                                    // Skills
+                                    ul.skill-list
+                                            li HTML:5 
+                                            li CSS:3
+                                            li JavaScript
+                                    // Buttons
+                                    .row.mb-2
+                                        .col-sm-6
+                                            a.btn.btn-primary.mr-2.mb-2(href='https://yusufyusie.github.io/Africa-Day-2023-Concert/', role='button') Project Link
+                                        .col-sm-6
+                                            a.btn.btn-secondary.mr-2.mb-2(href='https://github.com/yusufyusie/Africa-Day-2023-Concert', role='button') Source Code
+                            button.btn.btn-primary.mt-2(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

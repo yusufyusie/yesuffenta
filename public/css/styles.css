@@ -12069,6 +12069,10 @@ html {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
+.hero.bg-primary {
+  background-color: #005A8D !important;
+  color: #fff;
+}
 .hero .hero-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
@@ -12079,7 +12083,23 @@ html {
 .hero .hero-avatar {
   width: 15rem;
 }
-
+.hero .hero-subheading::after {
+  content: "I'm a Full Stack Developer and Designer |";
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(60, end) infinite;
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 @media (min-width: 992px) {
   .hero {
     padding-top: calc(6rem + 104px);
@@ -12093,43 +12113,113 @@ html {
     font-size: 1.5rem;
   }
 }
-.projects .projects-item {
+
+section#project.page-section.project {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row.justify-content-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-md-6.col-lg-4 {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.project-item {
   cursor: pointer;
   position: relative;
-  display: block;
-  max-width: 25rem;
-  border-radius: 0.5rem;
   overflow: hidden;
+  max-width: 25rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
-.projects .projects-item .projects-item-caption {
+.project-item:hover {
+  transform: translateY(-5px);
+}
+.project-item img.img-fluid {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+.project-item .project-item-caption {
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  transition: opacity 0.3s;
 }
-.projects .projects-item .projects-item-caption:hover {
-  opacity: 1;
-}
-.projects .projects-item .projects-item-caption .projects-item-caption-content {
+.project-item .project-item-caption .project-item-caption-content {
   font-size: 1.5rem;
 }
+.project-item .project-item-caption .project-item-caption-content h4, .project-item .project-item-caption .project-item-caption-content .h4 {
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5em;
+}
+.project-item .project-item-caption .project-item-caption-content .skill-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 1em;
+}
+.project-item .project-item-caption .project-item-caption-content .skill-list li {
+  font-size: 0.8em;
+  color: #ddd;
+  background-color: #333;
+  padding: 1px 4px;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.project-item .project-item-caption .project-item-caption-content .skill-list li:hover {
+  background-color: #555;
+}
+.project-item:hover .project-item-caption {
+  opacity: 1;
+}
 
-.projects-modal .btn-close {
+.project-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
   padding: 1rem;
 }
-.projects-modal .projects-modal-title {
+.project-modal .project-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
-  .projects-modal .projects-modal-title {
+  .project-modal .project-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+}
+
+section#about.page-section.bg-primary {
+  background-color: #005A8D !important;
 }
 
 .footer {
@@ -12141,4 +12231,47 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 4em;
+}
+.skill-list li {
+  font-size: 1.2em;
+  color: #ddd;
+  background-color: #333;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.skill-list li:hover {
+  background-color: #555;
+}
+
+.project-modal-title {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5em;
+}
+
+.divider-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.divider-custom .divider-custom-icon {
+  padding: 0 1em;
 }

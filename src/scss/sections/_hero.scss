@@ -1,8 +1,11 @@
-// 
-// Hero
-// 
+$custom-color: #005A8D; 
 
 .hero {
+  &.bg-primary {
+    background-color: $custom-color !important;
+    color: $white;
+  }
+
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 
@@ -18,12 +21,25 @@
   .hero-avatar {
     width: 15rem;
   }
-}
 
-@include media-breakpoint-up(lg) {
-  .hero {
+  .hero-subheading::after {
+    content: 'I\'m a Full Stack Developer and Designer |';
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(60, end) infinite;
+    display: block;
+    font-weight: bold; 
+    font-size: 1.5em; 
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @include media-breakpoint-up(lg) {
     padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-bottom: 6rem; 
 
     .hero-heading {
       font-size: 4rem;

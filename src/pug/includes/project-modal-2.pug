@@ -1,0 +1,39 @@
+// Projects Modal 2
+#projectModal2.project-modal.modal.fade(tabindex='-1', aria-labelledby='projectModal2', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content.bg-dark.text-white
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close', style='background-color: #ff0000; color: #ffffff; border: 2px solid #ffffff;')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Projects Modal - Title
+                            h2.project-modal-title.text-uppercase.mb-0 Meals Webpack app
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line.bg-white
+                                .divider-custom-icon
+                                    i.fas.fa-star.text-white
+                                .divider-custom-line.bg-white
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/mealsapp.jpeg', alt='...')
+                                .col-lg-6
+                                    // Projects Modal - Text
+                                    p.mb-4 The JavaScript capstone project is about building a web application based on an external API. Select an API that provides data about this topic and then build the web app around it. The web app will have 2 or 3 user interfaces
+                                    // Skills
+                                    ul.skill-list
+                                            li Javascript
+                                            li Webpack
+                                            li REST API
+                                    // Buttons
+                                    .row.mb-2
+                                        .col-sm-6
+                                            a.btn.btn-primary.mr-2.mb-2(href='https://yusufyusie.github.io/API-based-webapp/dist/', role='button') Project Link
+                                        .col-sm-6
+                                            a.btn.btn-secondary.mr-2.mb-2(href='https://github.com/yusufyusie/API-based-webapp', role='button') Source Code
+                            button.btn.btn-primary.mt-2(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

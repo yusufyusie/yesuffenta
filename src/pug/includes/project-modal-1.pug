@@ -1,0 +1,40 @@
+// Projects Modal 1
+#projectModal1.project-modal.modal.fade(tabindex='-1', aria-labelledby='projectModal1', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content.bg-dark.text-white
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close', style='background-color: #ff0000; color: #ffffff; border: 1px solid #ffffff;')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Projects Modal - Title
+                            h2.project-modal-title.text-uppercase.mb-0 Book Store React App
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line.bg-white
+                                .divider-custom-icon
+                                    i.fas.fa-star.text-white
+                                .divider-custom-line.bg-white
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/bookstore.jpeg', alt='...')
+                                .col-lg-6
+                                    // Projects Modal - Text
+                                    p.mb-4 This project will lay the foundations for my Bookstore website. I will create the user interface using React. I will also setup client-side routing using React Router V6.
+                                    // Skills
+                                    ul.skill-list
+                                        li React
+                                        li Redux
+                                        li JavaScript
+                                        li REST API
+                                    // Buttons
+                                    .row.mb-2
+                                        .col-sm-6
+                                            a.btn.btn-primary.mr-2.mb-2(href='https://react-bookstore-app-jrsy.onrender.com', role='button') Project Link
+                                        .col-sm-6
+                                            a.btn.btn-secondary.mr-2.mb-2(href='https://github.com/yusufyusie/Bookstore-CMS', role='button') Source Code
+                            button.btn.btn-primary.mt-2(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

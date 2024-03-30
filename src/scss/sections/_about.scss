@@ -1,0 +1,7 @@
+$custom-color: #005A8D;
+
+section#about.page-section {
+  &.bg-primary {
+    background-color: $custom-color !important;
+  }
+}

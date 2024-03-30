@@ -1,0 +1,39 @@
+// Projects Modal 3
+#projectModal3.project-modal.modal.fade(tabindex='-1', aria-labelledby='projectModal3', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content.bg-dark.text-white
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close', style='background-color: #ff0000; color: #ffffff; border: 2px solid #ffffff;')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Projects Modal - Title
+                            h2.project-modal-title.text-uppercase.mb-0 Space Travelers Hub App
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line.bg-white
+                                .divider-custom-icon
+                                    i.fas.fa-star.text-white
+                                .divider-custom-line.bg-white
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/spacetravelershub.png', alt='...')
+                                .col-lg-6
+                                    // Projects Modal - Text
+                                    p.mb-4 Space Travelers' Hub is a website that will be working with real live data from the SpaceX API for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+                                    // Skills
+                                    ul.skill-list
+                                            li Javascript
+                                            li React
+                                            li REST API
+                                    // Buttons
+                                    .row.mb-2
+                                        .col-sm-6
+                                            a.btn.btn-primary.mr-2.mb-2(href='https://space-travelers-hub-76fy.onrender.com', role='button') Project Link
+                                        .col-sm-6
+                                            a.btn.btn-secondary.mr-2.mb-2(href='https://github.com/yusufyusie/space-travelers-hub', role='button') Source Code
+                            button.btn.btn-primary.mt-2(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window
