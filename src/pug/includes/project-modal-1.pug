@@ -3,7 +3,7 @@
     .modal-dialog.modal-xl
         .modal-content.bg-dark.text-white
             .modal-header.border-0
-                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close', style='background-color: #ff0000; color: #ffffff; border: 2px solid #ffffff;')
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close', style='background-color: #ff0000; color: #ffffff; border: 1px solid #ffffff;')
             .modal-body.text-center.pb-5
                 .container
                     .row.justify-content-center
@@ -16,10 +16,22 @@
                                 .divider-custom-icon
                                     i.fas.fa-star.text-white
                                 .divider-custom-line.bg-white
-                            // Projects Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/images/projects/bookstore.jpeg', alt='...')
-                            // Projects Modal - Text
-                            p.mb-4 This project will lay the foundations for my Bookstore website. I will create the user interface using React. I will also setup client-side routing using React Router V6.
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/bookstore.jpeg', alt='...')
+                                .col-lg-6
+                                    // Projects Modal - Text
+                                    p.mb-4 This project will lay the foundations for my Bookstore website. I will create the user interface using React. I will also setup client-side routing using React Router V6.
+                                    // Skills
+                                    ul.skill-list
+                                        li React
+                                        li Redux
+                                        li JavaScript
+                                        li REST API
+                                    // Buttons
+                                    a.btn.btn-primary(href='#', role='button') Project Link
+                                    a.btn.btn-secondary(href='#', role='button') Source Code
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window

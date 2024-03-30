@@ -12232,3 +12232,47 @@ section#about.page-section.bg-primary {
 .copyright {
   background-color: #1a252f;
 }
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 4em;
+}
+.skill-list li {
+  font-size: 1.2em;
+  color: #ddd;
+  background-color: #333;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.skill-list li:hover {
+  background-color: #555;
+}
+
+.project-modal-title {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5em;
+}
+
+.divider-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.divider-custom .divider-custom-icon {
+  padding: 0 1em;
+  color: #fff;
+}

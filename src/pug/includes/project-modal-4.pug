@@ -16,10 +16,22 @@
                                 .divider-custom-icon
                                     i.fas.fa-star.text-white
                                 .divider-custom-line.bg-white
-                            // Projects Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/images/projects/mathmagicians.png', alt='...')
-                            // Projects Modal - Text
-                            p.mb-4 Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote. By building this application, you will learn how to use React.
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/mathmagicians.png', alt='...')
+                                .col-lg-6
+                                    // Projects Modal - Text
+                                    p.mb-4 Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote. By building this application, you will learn how to use React.
+                                    // Skills
+                                    ul.skill-list
+                                            li React
+                                            li Redux
+                                            li JavaScript
+                                            li REST API
+                                    // Buttons
+                                    a.btn.btn-primary(href='#', role='button') Project Link
+                                    a.btn.btn-secondary(href='#', role='button') Source Code
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window

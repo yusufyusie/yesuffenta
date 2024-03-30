@@ -16,10 +16,21 @@
                                 .divider-custom-icon
                                     i.fas.fa-star.text-white
                                 .divider-custom-line.bg-white
-                            // Projects Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/images/projects/mealsapp.jpeg', alt='...')
-                            // Projects Modal - Text
-                            p.mb-4 The JavaScript capstone project is about building a web application based on an external API. Select an API that provides data about this topic and then build the web app around it. The web app will have 2 or 3 user interfaces
+                            .row
+                                .col-lg-6
+                                    // Projects Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/mealsapp.jpeg', alt='...')
+                                .col-lg-6
+                                    // Projects Modal - Text
+                                    p.mb-4 The JavaScript capstone project is about building a web application based on an external API. Select an API that provides data about this topic and then build the web app around it. The web app will have 2 or 3 user interfaces
+                                    // Skills
+                                    ul.skill-list
+                                            li Javascript
+                                            li Webpack
+                                            li REST API
+                                    // Buttons
+                                    a.btn.btn-primary.mr-2(href='#', role='button') Project Link
+                                    a.btn.btn-secondary.mr-2(href='#', role='button') Source Code
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window

@@ -16,11 +16,22 @@
                                 .divider-custom-icon
                                     i.fas.fa-star.text-white
                                 .divider-custom-line.bg-white
-                            // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/images/projects/doctorapp.png', alt='...')
-                            // Portfolio Modal - Text
-                            p.mb-4
-                                | The project you are going to build for the Final Capstone Project is based on Creating a versatile app for booking appointments. Initially conceived for motorcycle trials, it can be customized for different scenarios like doctor visits or online class bookings. Unique projects like this can boost your visibility in the job market.
+                            .row
+                                .col-lg-6
+                                    // Portfolio Modal - Image
+                                    img.img-fluid.rounded.mb-5(src='assets/images/projects/doctorapp.png', alt='...')
+                                .col-lg-6
+                                    // Portfolio Modal - Text
+                                    p.mb-4 The project you are going to build for the Final Capstone Project is based on Creating a versatile app for booking appointments. Initially conceived for motorcycle trials, it can be customized for different scenarios like doctor visits or online class bookings. Unique projects like this can boost your visibility in the job market.
+                                    // Skills
+                                    ul.skill-list
+                                            li React
+                                            li Ruby
+                                            li PostgreSQL
+                                            li REST API
+                                    // Buttons
+                                    a.btn.btn-primary(href='#', role='button') Project Link
+                                    a.btn.btn-secondary(href='#', role='button') Source Code
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window
