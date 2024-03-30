@@ -57,6 +57,20 @@ section#project.page-section.project {
 
       .project-item-caption-content {
           font-size: 1.5rem;
+
+          h4 {
+            font-size: 1em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0.5em;
+          }
+        
+          p {
+            font-size: 0.6em;
+            color: #ddd;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1em;
+          }
       }
   }
 

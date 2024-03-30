@@ -12171,6 +12171,18 @@ section#project.page-section.project {
 .project-item .project-item-caption .project-item-caption-content {
   font-size: 1.5rem;
 }
+.project-item .project-item-caption .project-item-caption-content h4, .project-item .project-item-caption .project-item-caption-content .h4 {
+  font-size: 1em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5em;
+}
+.project-item .project-item-caption .project-item-caption-content p {
+  font-size: 0.6em;
+  color: #ddd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}
 .project-item:hover .project-item-caption {
   opacity: 1;
 }
