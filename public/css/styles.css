@@ -12066,6 +12066,10 @@ html {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
@@ -12082,6 +12086,11 @@ html {
 }
 .hero .hero-avatar {
   width: 15rem;
+  border-radius: 50%;
+}
+.hero .hero-avatar {
+  width: 15rem;
+  animation: avatar-animation 2s infinite;
 }
 .hero .hero-subheading::after {
   content: "I'm a Full Stack Developer and Designer |";
@@ -12091,6 +12100,7 @@ html {
   display: block;
   font-weight: bold;
   font-size: 1.5em;
+  will-change: width;
 }
 @keyframes typing {
   from {
@@ -12098,6 +12108,17 @@ html {
   }
   to {
     width: 100%;
+  }
+}
+@keyframes avatar-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 @media (min-width: 992px) {
