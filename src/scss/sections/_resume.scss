@@ -1,0 +1,130 @@
+#resume {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, $primary 0%, $secondary 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+}
+
+.rounded-4 {
+    border-radius: $border-radius-xl !important;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.react, .redux, .angular, .javascript, .typescript, .html5, .css3, .bootstrap{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.react:hover, .redux:hover, .angular:hover, .javascript:hover, .typescript:hover, .html5:hover, .css3:hover, .bootstrap:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.react span, .redux span, .angular span, .javascript span, .typescript span, .html5 span, .css3, .bootstrap span {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.react { color: #61DAFB; background-color: #282C34; }
+.redux { color: #764ABC; background-color: #FFFFFF; }
+.angular { color: #DD0031; background-color: #FFFFFF; }
+.javascript { color: #F7DF1E; background-color: #000000; }
+.typescript { color: #3178C6; background-color: #FFFFFF; }
+.html5 { color: #E34F26; background-color: #FFFFFF; }
+.css3 { color: #1572B6; background-color: #FFFFFF; }
+.bootstrap { color: #7952B3; background-color: #FFFFFF; }
+
+.row-cols-3.mb-4 {
+    display: flex;
+    flex-direction: row; 
+
+    > .col {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+.aspnet, .ruby, .rails, .postgresql, .mssql, .rswag, .cancancan, .devise, .nodejs, .springboot, .java, .csharp{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.aspnet:hover, .ruby:hover, .rails:hover, .postgresql:hover, .mssql:hover, .rswag:hover, .cancancan:hover, .devise:hover, .nodejs:hover, .springboot:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.aspnet span, .ruby span, .rails span, .postgresql span, .mssql span, .rswag span, .cancancan span, .devise, .nodejs, .springboot, .java, .csharp span {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.aspnet { color: #004880; background-color: #FFFFFF; } 
+.ruby { color: #CC342D; background-color: #FFFFFF; } 
+.rails { color: #CC0000; background-color: #FFFFFF; } 
+.mssql { color: #CC2927; background-color: #FFFFFF; } 
+.rswag { color: #5A9; background-color: #FFFFFF; } 
+.cancancan { color: #E91E63; background-color: #FFFFFF; } 
+.devise { color: #E91E63; background-color: #FFFFFF; } 
+.git { color: #F05032; background-color: #FFFFFF; }
+.github { color: #181717; background-color: #FFFFFF; }
+.jwt { color: #000000; background-color: #FFFFFF; } 
+.gitlab { color: #FC6D27; background-color: #FFFFFF; }
+.nodejs { color: #339933; background-color: #FFFFFF; }
+.springboot { color: #6DB33F; background-color: #FFFFFF; }
+.java { color: #007396; background-color: #FFFFFF; }
+.csharp { color: #239120; background-color: #FFFFFF; }
+
+
+.git, .github, .git-flow, .gitlab, .restful-api, .jwt, .unit-feature-testing, .agile, .tdd, .figma, .tailwind-css, .kanban-board {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.git:hover, .github:hover, .git-flow:hover, .gitlab:hover, .restful-api:hover, .jwt:hover, .unit-feature-testing:hover, .agile:hover, .tdd:hover, .figma:hover, .tailwind-css:hover, .kanban-board:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.git span, .github span, .git-flow, .gitlab, .restful-api, .jwt, .unit-feature-testing, .agile, .tdd, .figma, .tailwind-css, .kanban-board {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
