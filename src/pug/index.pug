@@ -398,40 +398,70 @@ section#contact.page-section
             .divider-custom-icon
                 i.fas.fa-envelope
             .divider-custom-line
-        // Contact Section Form
-        .row.justify-content-center
-            .col-lg-8.col-xl-7
-                form#contactForm(method='post', action='https://formspree.io/f/mkndqzww')
-                    // Name input
-                    .form-floating.mb-3
-                        input#name.form-control(
-                            type='text',
-                            placeholder='Your Name',
-                            name='name',
-                            required
-                        )
-                        label(for='name') Name
-                    // Email address input
-                    .form-floating.mb-3
-                        input#email.form-control(
-                            type='email',
-                            placeholder='Your Email',
-                            name='email',
-                            required
-                        )
-                        label(for='email') Email
-                    // Message input
-                    .form-floating.mb-3
-                        textarea#message.form-control(
-                            type='text',
-                            placeholder='Your Message',
-                            style='height: 10rem;',
-                            name='message',
-                            required
-                        )
-                        label(for='message') Message
-                    // Submit Button
-                    button#submitButton.btn.btn-primary.btn-xl(type='submit') Send Message                     
+        .row
+            // Contact Form
+            .col-lg-6
+                h3.text-center.text-uppercase Message Me
+                // Contact Section Form
+                .row.justify-content-center
+                    .col-lg-10
+                        form#contactForm(method='post', action='https://formspree.io/f/mkndqzww')
+                            // Name input
+                            .form-floating.mb-3
+                                input#name.form-control(
+                                    type='text',
+                                    placeholder='Your Name',
+                                    name='name',
+                                    required
+                                )
+                                label(for='name') Name
+                            // Email address input
+                            .form-floating.mb-3
+                                input#email.form-control(
+                                    type='email',
+                                    placeholder='Your Email',
+                                    name='email',
+                                    required
+                                )
+                                label(for='email') Email
+                            // Message input
+                            .form-floating.mb-3
+                                textarea#message.form-control(
+                                    type='text',
+                                    placeholder='Your Message',
+                                    style='height: 10rem;',
+                                    name='message',
+                                    required
+                                )
+                                label(for='message') Message
+                            // Submit Button
+                            button#submitButton.btn.btn-primary.btn-xl(type='submit') Send Message
+            // Contact Information
+            .col-lg-6
+                h3.text-center.text-uppercase Contact Information
+                .contact-info
+                    p Open for opportunities. Let's connect and build something awesome together!
+                    .info-line
+                    ul
+                        li
+                            .icon
+                                i.fas.fa-user
+                            .text
+                                span.label Name
+                                span.value Yesuf Fenta
+                        li
+                            .icon
+                                i.fas.fa-map-marker-alt
+                            .text
+                                span.label Location
+                                span.value Addis Ababa, Ethiopia
+                        li
+                            .icon
+                                i.fas.fa-envelope
+                            .text
+                                span.label Email
+                                span.value
+                                     a(href='mailto:yesuf023@gmail.com') yesuf023@gmail.com    
         // Footer
 footer.footer.text-center
     .container
