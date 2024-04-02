@@ -149,10 +149,16 @@ section#project.page-section.project
     // Resume Section
 section#resume.page-section.resume
     // Page Content
-    .container.px-5.my-5
+    .container.px-5.my-0
         .text-center.mb-5
             h1.display-5.fw-bolder.mb-0
-                span.text-gradient.d-inline Resume
+                h1.text-gradient.text-uppercase.d-inline.mb-0 Resume
+                     // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
         .row.gx-5.justify-content-center
 
             .col-lg-11.col-xl-9.col-xxl-8
@@ -160,10 +166,10 @@ section#resume.page-section.resume
                 // Experience Section
                 section
                     .d-flex.align-items-center.justify-content-between.mb-4
-                        h2.text-primary.fw-bolder.mb-0 Experience
+                        h2.text-success.fw-bolder.mb-0 Experience
                         // Download resume button
                         // Note: Set the link href target to a PDF file within your project
-                        a.btn.btn-primary.px-4.py-3(href='https://drive.google.com/file/d/1CRLQ_GaIrA4CnMARbbLkj3KQHerPKxOM/view?usp=drive_link', target="_blank")
+                        a.btn.btn-success.px-4.py-3(href='https://drive.google.com/file/d/1CRLQ_GaIrA4CnMARbbLkj3KQHerPKxOM/view?usp=drive_link', target="_blank")
                             i.fas.fa-download.me-2
                             | Download Resume
 
@@ -173,7 +179,7 @@ section#resume.page-section.resume
                             .row.align-items-center.gx-5
                                 .col.text-center.text-lg-start.mb-4.mb-lg-0
                                     .bg-light.p-4.rounded-4
-                                        .text-primary.fw-bolder.mb-2 Feb 2023 - Present
+                                        .text-success.fw-bolder.mb-2 Feb 2023 - Present
                                         .small.fw-bolder Web Developer
                                         .small.text-muted Microverse, San Francisco, California, United States, Remote
                                 .col-lg-8
@@ -185,7 +191,7 @@ section#resume.page-section.resume
                             .row.align-items-center.gx-5
                                 .col.text-center.text-lg-start.mb-4.mb-lg-0
                                     .bg-light.p-4.rounded-4
-                                        .text-primary.fw-bolder.mb-2 Oct 2020 - Present
+                                        .text-success.fw-bolder.mb-2 Oct 2020 - Present
                                         .small.fw-bolder Software Programmer
                                         .small.text-muted Ethiopian Federal Police, Addis Ababa, Ethiopia, On-site
                                 .col-lg-8
@@ -193,7 +199,7 @@ section#resume.page-section.resume
                 
                 // Education Section
                 section
-                    h2.text-secondary.fw-bolder.mb-4 Education
+                    h2.text-danger.fw-bolder.mb-4 Education
 
                     // Education Card 1
                     .card.shadow.border-0.rounded-4.mb-5(data-aos="fade-up")
@@ -201,7 +207,7 @@ section#resume.page-section.resume
                             .row.align-items-center.gx-5
                                 .col.text-center.text-lg-start.mb-4.mb-lg-0
                                     .bg-light.p-4.rounded-4
-                                        .text-secondary.fw-bolder.mb-2 Feb 2023 - Present
+                                        .text-danger.fw-bolder.mb-2 Feb 2023 - Present
                                         .mb-2
                                             .small.fw-bolder Microverse
                                             .small.text-muted Remote Full Stack Web Development Program
@@ -217,7 +223,7 @@ section#resume.page-section.resume
                             .row.align-items-center.gx-5
                                 .col.text-center.text-lg-start.mb-4.mb-lg-0
                                     .bg-light.p-4.rounded-4
-                                        .text-secondary.fw-bolder.mb-2 Sep 2012 - July 2016
+                                        .text-danger.fw-bolder.mb-2 Sep 2012 - July 2016
                                         .mb-2
                                             .small.fw-bolder Adama Science and Technology University
                                             .small.text-muted BSc, Software Engineering

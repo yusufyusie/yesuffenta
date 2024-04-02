@@ -1,3 +1,13 @@
+// Variables
+
+// Override Bootstrap Colors
+$blue: #1e30f3;
+$pink: #e21e80;
+
+// Redefine Bootstrap State Colors
+$success: $blue;
+$danger: $pink;
+
 #resume {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
