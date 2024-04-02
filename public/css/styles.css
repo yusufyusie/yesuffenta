@@ -12510,7 +12510,7 @@ section#about.page-section.bg-primary {
 .contact-info ul:before {
   content: "";
   position: absolute;
-  left: 60px;
+  left: 65px;
   top: 0;
   bottom: 0;
   border-left: 1px solid #6c757d;
