@@ -12294,11 +12294,6 @@ section#project.page-section.project {
   margin-left: 5px;
 }
 
-.react {
-  color: #61DAFB;
-  background-color: #282C34;
-}
-
 .redux {
   color: #764ABC;
   background-color: #FFFFFF;
@@ -12307,11 +12302,6 @@ section#project.page-section.project {
 .angular {
   color: #DD0031;
   background-color: #FFFFFF;
-}
-
-.javascript {
-  color: #F7DF1E;
-  background-color: #000000;
 }
 
 .typescript {
@@ -12332,15 +12322,6 @@ section#project.page-section.project {
 .bootstrap {
   color: #7952B3;
   background-color: #FFFFFF;
-}
-
-.row-cols-3.mb-4 {
-  display: flex;
-  flex-direction: row;
-}
-.row-cols-3.mb-4 > .col {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
 }
 
 .aspnet, .ruby, .rails, .postgresql, .mssql, .rswag, .cancancan, .devise, .nodejs, .springboot, .java, .csharp {
@@ -12454,10 +12435,6 @@ section#project.page-section.project {
 .git span, .github span, .git-flow, .gitlab, .restful-api, .jwt, .unit-feature-testing, .agile, .tdd, .figma, .tailwind-css, .kanban-board {
   font-weight: 600;
   margin-left: 5px;
-}
-
-.no-bullets {
-  list-style-type: none;
 }
 
 section#about.page-section.bg-primary {

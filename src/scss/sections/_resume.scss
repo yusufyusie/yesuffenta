@@ -60,24 +60,13 @@ $danger: $pink;
     margin-left: 5px;
 }
 
-.react { color: #61DAFB; background-color: #282C34; }
 .redux { color: #764ABC; background-color: #FFFFFF; }
 .angular { color: #DD0031; background-color: #FFFFFF; }
-.javascript { color: #F7DF1E; background-color: #000000; }
 .typescript { color: #3178C6; background-color: #FFFFFF; }
 .html5 { color: #E34F26; background-color: #FFFFFF; }
 .css3 { color: #1572B6; background-color: #FFFFFF; }
 .bootstrap { color: #7952B3; background-color: #FFFFFF; }
 
-.row-cols-3.mb-4 {
-    display: flex;
-    flex-direction: row; 
-
-    > .col {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-    }
-}
 
 .aspnet, .ruby, .rails, .postgresql, .mssql, .rswag, .cancancan, .devise, .nodejs, .springboot, .java, .csharp{
     padding: 5px;
@@ -134,7 +123,4 @@ $danger: $pink;
     margin-left: 5px;
 }
 
-.no-bullets {
-    list-style-type: none;
-}
 
