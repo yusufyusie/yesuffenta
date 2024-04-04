@@ -11,12 +11,12 @@ $custom-color: #005A8D;
     color: $white;
   }
 
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: calc(4rem + 64px);
+  padding-bottom: 4rem;
 
   .hero-heading {
     font-size: 2.75rem;
-    line-height: 2.75rem;
+    line-height: 2.65rem;
   }
 
   .hero-subheading {
@@ -56,12 +56,12 @@ $custom-color: #005A8D;
   }
   
   @include media-breakpoint-up(lg) {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem; 
+    padding-top: calc(1rem + 85px);
+    padding-bottom: 5rem; 
 
     .hero-heading {
       font-size: 4rem;
-      line-height: 3.5rem;
+      line-height: 3.2rem;
     }
 
     .hero-subheading {
