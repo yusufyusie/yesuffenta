@@ -50,6 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
     // Movable dots animation
     const canvas = document.getElementById('particleCanvas');
     const ctx = canvas.getContext('2d');
@@ -66,7 +67,7 @@ window.addEventListener('DOMContentLoaded', event => {
     let particlesArray;
 
     // Array of colors
-    const colors = ['darkgreen', 'darkpink', 'darkred', 'darkblue'];
+    const colors = ['green', 'darkpink', 'darkred', 'darkblue',  'purple'];
 
     class Particle {
         constructor(x, y) {
@@ -96,7 +97,7 @@ window.addEventListener('DOMContentLoaded', event => {
             if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.color = colors[Math.floor(Math.random() * colors.length)]; // Select a new random color
+                this.color = colors[Math.floor(Math.random() * colors.length)];
             }
         }
     }
@@ -104,7 +105,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Initialize particles
     function init() {
         particlesArray = [];
-        for (let i = 0; i < 50; i++) { // Adjusted number of particles
+        for (let i = 0; i < 50; i++) {
             let x = Math.random() * canvas.width;
             let y = Math.random() * canvas.height;
             particlesArray.push(new Particle(x, y));
