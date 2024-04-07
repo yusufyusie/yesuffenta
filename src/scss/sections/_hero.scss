@@ -89,6 +89,12 @@ $custom-color: #005A8D;
   top: 150px;
   margin-left: 22px;
   padding-left: 22px;
+
+  @media (max-width: 768px) {
+    top: 100px;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
 }
 
 .vertical-line {
@@ -116,6 +122,16 @@ $custom-color: #005A8D;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+  position: absolute;
+  right: -100px;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
 }
 
 .vertical-text {
@@ -128,6 +144,11 @@ $custom-color: #005A8D;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   line-height: 2.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
 }
 
 .vertical-line-right {
@@ -135,4 +156,9 @@ $custom-color: #005A8D;
   height: 200px; 
   background-color: #fff;
   margin-top: 140px; 
+
+  @media (max-width: 768px) {
+    height: 150px;
+    margin-top: 100px;
+  }
 }
